@@ -1,0 +1,97 @@
+.contactoform-section {
+  width: 100%;
+  background-color: #ff6600; /* naranja corporativo */
+  /* Añadimos un patrón sutil de líneas diagonales */
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.03) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.03) 50%, rgba(0, 0, 0, 0.03) 75%, transparent 75%, transparent);
+  padding: 3rem 0 2.5rem 0;
+  text-align: center;
+  border-radius: 0;
+  margin: 0 auto 2.5rem auto;
+}
+.contactoform-subtitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.contactoform-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.contactoform-form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  background: #fff; /* fondo blanco para el área del formulario */
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2.5rem 2rem;
+}
+.contactoform-row {
+  display: flex;
+  gap: 1.1rem;
+}
+.contactoform-form input,
+.contactoform-form textarea {
+  font-size: 1.08rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd; /* Delineado gris claro */
+  background: #f9f9f9; /* Fondo ligeramente gris para diferenciar */
+  color: #222;
+  font-family: 'Montserrat', Arial, sans-serif;
+  flex: 1;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave */
+}
+
+.contactoform-form input:focus,
+.contactoform-form textarea:focus {
+  outline: none;
+  border-color: #ff6600; /* Delineado naranja al enfocar */
+  box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.15); /* Resplandor naranja */
+}
+
+.contactoform-form textarea {
+  resize: vertical;
+}
+.contactoform-legal {
+  text-align: left;
+  font-size: 0.98rem;
+  color: #222;
+  margin-bottom: 0.7rem;
+}
+.contactoform-btn {
+  background: #ff6600;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.contactoform-btn:hover {
+  background: #000000;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+@media (max-width: 700px) {
+  .contactoform-row {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .contactoform-title {
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,44 @@
+.testimonios-section {
+  text-align: center;
+  margin: 3rem auto 2rem auto;
+}
+.testimonios-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.2rem;
+  color: #000;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.testimonios-list {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+.testimonio-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 1.2rem 1.5rem;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.testimonio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+.testimonio-text {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0.7rem;
+  font-style: italic;
+}
+.testimonio-nombre {
+  font-size: 1rem;
+  color: #ff6600; /* Naranja corporativo */
+  font-weight: 600;
+}

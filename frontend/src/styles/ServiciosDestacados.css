@@ -1,0 +1,79 @@
+.servicios-destacados-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 4rem auto;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.servicios-destacados-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 3rem;
+}
+
+.servicios-destacados-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.servicio-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid #f0f0f0;
+}
+
+.servicio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-card-icon {
+  width: 400px;
+  height: 300px;
+  margin-bottom: 1.5rem;
+  border-radius: 16px; /* Añadimos bordes redondeados */
+  transition: transform 0.4s ease; /* Añadimos transición para el zoom */
+  overflow: hidden; /* Para que la imagen no se salga del borde redondeado */
+}
+
+.servicio-card:hover .servicio-card-icon {
+  transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+}
+
+.servicio-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.servicio-card-description {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Responsive para móviles */
+@media (max-width: 900px) {
+  .servicios-destacados-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .servicios-destacados-title {
+    font-size: 2rem;
+  }
+
+  .servicio-card-title {
+    font-size: 1.3rem;
+  }
+}

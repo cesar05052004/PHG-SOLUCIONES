@@ -1,0 +1,81 @@
+.clientes-titulo {
+  margin-bottom: 2.5rem;
+}
+/* Ocultar los botones de navegación laterales del carrusel */
+.slick-arrow {
+  display: none !important;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+/* Sección Clientes - Estilo corporativo formal */
+
+ .clientes-section {
+  color: #000;
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: 'Montserrat', Arial, sans-serif;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+
+.cliente-logo {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 96px;
+  height: 96px;
+  border: none;
+  box-shadow: none;
+  transition: transform 0.2s;
+  /* Añadimos padding para que el hover no se corte y usamos margin para separar */
+  padding: 8px;
+  overflow: hidden;
+}
+.clientes-carrusel {
+  margin: 0 auto 2rem auto;
+  max-width: 1100px; /* Aumentamos el ancho máximo del carrusel */
+}
+.cliente-logo img {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  background: transparent;
+  box-shadow: none;
+  filter: grayscale(0);
+  opacity: 1;
+  transition: transform 0.3s;
+}
+
+/* Removed duplicate .clientes-btn block */
+.clientes-btn {
+  background: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 18px;
+  padding: 0.8rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', Arial, sans-serif;
+  text-decoration: none;
+  display: inline-block;
+}
+.clientes-btn:hover {
+  background: #ff6600;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}

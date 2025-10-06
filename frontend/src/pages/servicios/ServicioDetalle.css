@@ -1,0 +1,38 @@
+/* Botón regresar */
+.servicios-btn {
+  margin-top: 2rem;
+  background: #e67c23;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(230,124,35,0.08);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.servicios-btn:hover {
+  background: #c55e0c;
+  box-shadow: 0 4px 16px rgba(230,124,35,0.18);
+}
+/* Estilos para las vistas de servicios individuales */
+.servicios-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(230,124,35,0.07);
+  max-width: 700px;
+  margin: 2rem auto;
+}
+.servicios-title {
+  color: #e67c23;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.servicios-container p {
+  font-size: 1.1rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}

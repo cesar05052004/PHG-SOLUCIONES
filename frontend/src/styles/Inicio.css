@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* ============================= */
+/* Estilos Generales de Inicio   */
+/* ============================= */
+
+.inicio-container {
+  color: #000;
+  font-family: 'Montserrat', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ============================= */
+/* Menú Desplegable              */
+/* ============================= */
+
+/* ============================= */
+/* Contacto y Equipo             */
+/* ============================= */
+
+.contactoform-section {
+  background: var(--phg-naranja);
+}
+
+.contactoform-title {
+  color: var(--phg-negro);
+}
+
+.contactoform-btn {
+  background: var(--phg-blanco);
+  color: var(--phg-negro);
+}
+
+.contactoform-btn:hover {
+  background: var(--phg-negro);
+  color: var(--phg-naranja);
+}
+
+.equipo-card {
+  background: var(--phg-blanco);
+}
+
+/* ============================= */
+/* Footer                        */
+/* ============================= */
+
+.footer {
+  width: 100%;
+  background-color: #ff6600; /* Naranja corporativo */  
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.03) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.03) 50%, rgba(0, 0, 0, 0.03) 75%, transparent 75%, transparent);
+  margin-top: 2.5rem;
+  text-align: center;
+  color: #ffffff; /* Texto blanco para contraste */
+  font-family: 'Montserrat', Arial, sans-serif;
+  padding: 2.5rem 1.5rem;
+  border-top: none; /* Quitamos el borde superior */
+}
+
+.footer-contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap; /* Para que se vea bien en móvil */
+}
+
+.footer-contact-item {
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+.footer-contact-item strong {
+  color: #ffffff;
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+/* ============================= */
+/* Responsive                    */
+/* ============================= */

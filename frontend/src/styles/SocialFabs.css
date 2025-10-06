@@ -1,0 +1,66 @@
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.social-fabs-container {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.fab {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  animation: pulse 2.5s infinite ease-in-out;
+  color: #fff;
+}
+
+.fab:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.fab svg {
+  width: 32px;
+  height: 32px;
+  fill: #fff;
+  stroke: #fff;
+}
+
+/* Colores específicos */
+.whatsapp-fab {
+  background-color: #ff6600; /* Naranja corporativo */
+  animation-delay: 0s;
+}
+.whatsapp-fab:hover {
+  background-color: #111;
+}
+
+.facebook-fab {
+  background-color: #1877F2; /* Azul de Facebook */
+  animation-delay: 0.2s;
+}
+
+.instagram-fab {
+  /* Gradiente de Instagram */
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  animation-delay: 0.4s;
+}

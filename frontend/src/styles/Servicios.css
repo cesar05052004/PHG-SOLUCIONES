@@ -1,0 +1,45 @@
+.servicios-btn:hover {
+  background: #000 !important;
+  color: #ffffff !important;
+}
+/* Estilos para la vista de Servicios */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+.servicios-container {
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #000;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  max-width: 700px;
+  margin: 2rem auto;
+}
+ .servicios-btn {
+  background: #ff6600; /* Naranja corporativo */
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 18px;
+  padding: 0.9rem 2.2rem;
+  margin: 2.5rem auto 1.5rem auto;
+  cursor: pointer;
+  box-shadow: 0 3px 8px rgba(230,124,35,0.10);
+  transition: background 0.25s ease;
+  display: inline-block;
+}
+.servicios-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #000;
+}
+.servicios-list li {
+  font-size: 1.1rem;
+  padding: 1rem 0;
+  color: #000;
+  border-bottom: none;
+}
+.servicios-list a {
+  color: #000 !important;
+}

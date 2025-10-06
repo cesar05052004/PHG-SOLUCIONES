@@ -1,0 +1,157 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 700px; /* Aumentamos un poco la altura */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff; /* Color de texto por defecto para la sección */
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(17, 17, 17, 0.6); /* Capa oscura semitransparente */
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0rem 29vw 0 0;
+  padding: 2.5rem 2rem;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: left;
+  position: relative; /* Para que esté sobre el overlay */
+  z-index: 2;
+}
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.hero-subtitle {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff6600; /* Naranja corporativo */
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.hero-desc {
+  font-size: 1.25rem;
+  color: #f0f0f0; /* Un gris muy claro, casi blanco */
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.contactoform-section {
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background: #ff6600; /* naranja corporativo */
+  padding: 3rem 0 2.5rem 0;
+  text-align: center;
+  border-radius: 0;
+}
+.contactoform-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #111;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.contactoform-form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.contactoform-row {
+  display: flex;
+  gap: 1.1rem;
+}
+.contactoform-form input,
+.contactoform-form textarea {
+  font-size: 1.08rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #fff;
+  color: #222;
+  font-family: 'Montserrat', Arial, sans-serif;
+  flex: 1;
+}
+.contactoform-form textarea {
+  resize: vertical;
+}
+.contactoform-legal {
+  text-align: left;
+  font-size: 0.98rem;
+  color: #222;
+  margin-bottom: 0.7rem;
+}
+.contactoform-btn {
+  background: #fff;
+  color: #111;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, color 0.2s;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+.contactoform-btn:hover {
+  background: #111;
+  color: #ffd600;
+}
+.hero-btn {
+  background: #ff6600; /* naranja corporativo */
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  text-decoration: none;
+}
+.hero-btn:hover {
+  background: #000000;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+@media (max-width: 700px) {
+  .hero-content {
+    padding: 2rem 0.7rem;
+    text-align: center;
+  }
+  .contactoform-row {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .contactoform-title {
+    font-size: 1.3rem;
+  }
+}
