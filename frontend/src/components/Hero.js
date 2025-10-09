@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Hero = () => (
   <section
     className="hero-section"
-    style={{ background: "url('/hero-bg.jpg') center/cover no-repeat" }}
+    style={{ background: "url('https://res.cloudinary.com/diyd6flkf/image/upload/v1760021191/hero-bg_cgs5qy.jpg') center/cover no-repeat" }}
   >
     <div className="hero-overlay"> {/* Esta capa ahora tiene estilos */}
       <div className="hero-content">

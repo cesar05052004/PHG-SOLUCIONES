@@ -5,7 +5,7 @@ import '../styles/CtaSection.css';
 const CtaSection = () => (
   <section className="cta-section">
     <img 
-      src="/icons/cta-imagen.png"
+      src="https://res.cloudinary.com/diyd6flkf/image/upload/v1760021215/cta-imagen_chfegd.png"
       alt="Equipo de expertos trabajando" 
       className="cta-image" 
     />
