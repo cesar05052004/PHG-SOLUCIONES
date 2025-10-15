@@ -79,3 +79,27 @@
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
+
+/* --- Media Query para Responsividad (móviles y tablets) --- */
+@media (max-width: 768px) {
+  .clientes-section {
+    padding: 2rem 1rem; /* Reduce el padding en móviles */
+    margin-top: 1.5rem;
+  }
+
+  .clientes-title {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+    margin-bottom: 1.5rem;
+  }
+
+  .cliente-logo,
+  .cliente-logo img {
+    width: 80px; /* Reducimos el tamaño del logo en móviles */
+    height: 80px;
+  }
+
+  .clientes-btn {
+    padding: 0.7rem 1.8rem; /* Hacemos el botón un poco más pequeño */
+    font-size: 1rem;
+  }
+}

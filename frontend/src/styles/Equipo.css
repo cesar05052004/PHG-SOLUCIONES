@@ -49,3 +49,16 @@
   font-size: 1rem;
   color: #ff6600; /* Naranja corporativo */
 }
+
+/* --- Media Query para Responsividad (móviles y tablets) --- */
+@media (max-width: 768px) {
+  .equipo-list {
+    flex-direction: column; /* Apila las tarjetas verticalmente */
+    align-items: center;   /* Centra las tarjetas en la columna */
+  }
+
+  .equipo-card {
+    width: 90%; /* Las tarjetas ocupan casi todo el ancho disponible */
+    max-width: 320px; /* Con un ancho máximo para no ser demasiado grandes */
+  }
+}

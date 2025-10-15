@@ -142,16 +142,31 @@
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
-@media (max-width: 700px) {
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 600px; /* Altura más adecuada para móviles */
+  }
+
   .hero-content {
+    margin: 0 1rem; /* Eliminamos el margen lateral grande y centramos */
     padding: 2rem 0.7rem;
     text-align: center;
   }
+
+  .hero-title {
+    font-size: 2.2rem; /* Reducimos el tamaño del título principal */
+  }
+
+  .hero-subtitle {
+    font-size: 1.3rem; /* Reducimos el tamaño del subtítulo */
+  }
+
+  .hero-desc {
+    font-size: 1.1rem; /* Ajustamos el texto de descripción */
+  }
+
   .contactoform-row {
     flex-direction: column;
-    gap: 0.7rem;
-  }
-  .contactoform-title {
-    font-size: 1.3rem;
+    gap: 1rem;
   }
 }
