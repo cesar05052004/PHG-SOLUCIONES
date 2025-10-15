@@ -6,13 +6,15 @@ import '../styles/ClientesCarrusel.css';
 import { Link } from 'react-router-dom';
 
 const clientes = [
-  { nombre: 'Edificio Corporativo', img: '/clientes/edificio-corporativo.png' },
-  { nombre: 'Maxalcotex', img: '/clientes/maxalcotex.png' },
-  { nombre: 'Maxalcotex', img: '/clientes/marianne.png' },
-  { nombre: 'Maxalcotex', img: '/clientes/mavanna.png' },
-  { nombre: 'Edificio Corporativo', img: '/clientes/edificio-corporativo.png' },
-  { nombre: 'Edificio Corporativo', img: '/clientes/edificio-corporativo.png' },
-  { nombre: 'Edificio Corporativo', img: '/clientes/edificio-corporativo.png' },
+  { nombre: 'Maxalcotex', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760539179/maxalcotex_pytxgt.jpg' },
+  { nombre: 'Marianne', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760539178/marianne_q7a9hf.jpg' },
+  { nombre: 'Gecco', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760539178/mavanna_hzmbxf.jpg' },
+  { nombre: 'Law Expert Grup', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760540448/leg_gmwlns.jpg' },
+  { nombre: 'Cerete Nutrition', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760540062/Captura_de_pantalla_2025-10-15_095356_mbfrgu.png' },
+  { nombre: 'La Bodega', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760539177/la-bodega_w41mss.png' },
+  { nombre: 'Infraestructura Hospitalaria', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760539947/Captura_de_pantalla_2025-10-15_095202_nona0y.png' },
+  { nombre: 'Ser Optica', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760539179/ser-optica_sz4lpz.png' },
+  { nombre: 'Inclusive Sport', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760539767/inclusive-sport_j9punq.png' },
 ];
 
 const ClientesCarrusel = () => {
@@ -44,7 +46,7 @@ const ClientesCarrusel = () => {
           </div>
         ))}
       </Slider>
-      <Link to="/#contacto-form" className="clientes-btn">
+      <Link to="/#contacto" className="clientes-btn">
         ¡SOLICITA UNA ASESORÍA AHORA!
       </Link>
     </div>
