@@ -76,4 +76,9 @@
   .servicio-card-title {
     font-size: 1.3rem;
   }
+
+  .servicio-card-icon {
+    width: 100%; /* Hacemos la imagen responsiva */
+    height: auto; /* Mantenemos la proporción de la imagen */
+  }
 }

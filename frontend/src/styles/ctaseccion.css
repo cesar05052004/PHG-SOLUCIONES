@@ -1,0 +1,52 @@
+/* Estilos para la sección de Llamada a la Acción (CTA) */
+
+.cta-section {
+  background-color: #ff6600; /* Naranja corporativo */
+  color: #fff;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.cta-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.cta-description {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  opacity: 0.9;
+}
+
+.cta-btn {
+  background: #fff;
+  color: #111;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 2.2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background: #111;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* --- Media Query para Responsividad --- */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 2rem; /* Título más pequeño en móviles */
+  }
+  .cta-description {
+    font-size: 1.1rem; /* Descripción más pequeña en móviles */
+  }
+}
