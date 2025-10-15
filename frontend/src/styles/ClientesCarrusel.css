@@ -1,16 +1,8 @@
-.clientes-titulo {
-  margin-bottom: 2.5rem;
-}
-/* Ocultar los botones de navegación laterales del carrusel */
-.slick-arrow {
-  display: none !important;
-}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-/* Sección Clientes - Estilo corporativo formal */
 
- .clientes-section {
+/* --- Sección Clientes --- */
+.clientes-section {
   color: #000;
-  margin-top: 3rem;
   text-align: center;
   padding: 2.5rem 1.5rem;
   background: transparent;
@@ -18,47 +10,53 @@
   box-shadow: none;
   font-family: 'Montserrat', Arial, sans-serif;
   max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 3rem auto;
 }
 
+.clientes-titulo {
+  margin-bottom: 2.5rem;
+}
 
+/* Ocultar flechas */
+.slick-arrow {
+  display: none !important;
+}
 
+/* Carrusel */
+.clientes-carrusel {
+  margin: 0 auto 2rem auto;
+  width: 100%;
+  max-width: 1100px;
+  overflow: hidden;
+}
 
-
+/* Logos */
 .cliente-logo {
-  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 96px;
   height: 96px;
-  border: none;
-  box-shadow: none;
-  transition: transform 0.2s;
-  /* Añadimos padding para que el hover no se corte y usamos margin para separar */
   padding: 8px;
+  transition: transform 0.3s ease;
   overflow: hidden;
-}
-.clientes-carrusel {
-  margin: 0 auto 2rem auto;
-  max-width: 1100px; /* Aumentamos el ancho máximo del carrusel */
-}
-.cliente-logo img {
-  width: 96px;
-  height: 96px;
-  object-fit: contain;
-  background: transparent;
-  box-shadow: none;
-  filter: grayscale(0);
-  opacity: 1;
-  transition: transform 0.3s;
+  margin: 0 auto;
 }
 
-/* Removed duplicate .clientes-btn block */
+.cliente-logo img {
+  width: 100%;
+  height: auto;
+  max-width: 96px;
+  object-fit: contain;
+  filter: grayscale(0);
+  opacity: 1;
+  transition: transform 0.3s ease;
+}
+
+/* Botón */
 .clientes-btn {
-  background: #000000;
-  color: #ffffff;
+  background: #000;
+  color: #fff;
   border: none;
   border-radius: 18px;
   padding: 0.8rem 2.2rem;
@@ -69,37 +67,60 @@
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
-  font-family: 'Montserrat', Arial, sans-serif;
   text-decoration: none;
   display: inline-block;
 }
+
 .clientes-btn:hover {
   background: #ff6600;
-  color: #ffffff;
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
-/* --- Media Query para Responsividad (móviles y tablets) --- */
+/* --- Responsivo --- */
 @media (max-width: 768px) {
   .clientes-section {
-    padding: 2rem 1rem; /* Reduce el padding en móviles */
-    margin-top: 1.5rem;
+    padding: 1.5rem 1rem;
+    margin-top: 1rem;
   }
 
-  .clientes-title {
-    font-size: 1.5rem; /* Reduce el tamaño del título */
-    margin-bottom: 1.5rem;
+  .clientes-titulo {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
   }
 
-  .cliente-logo,
+  .clientes-carrusel {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cliente-logo {
+    width: 70px;
+    height: 70px;
+  }
+
   .cliente-logo img {
-    width: 80px; /* Reducimos el tamaño del logo en móviles */
-    height: 80px;
+    max-width: 70px;
   }
 
   .clientes-btn {
-    padding: 0.7rem 1.8rem; /* Hacemos el botón un poco más pequeño */
+    padding: 0.6rem 1.6rem;
     font-size: 1rem;
+  }
+}
+
+/* Extra pequeño (celulares muy pequeños) */
+@media (max-width: 480px) {
+  .cliente-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cliente-logo img {
+    max-width: 60px;
+  }
+
+  .clientes-titulo {
+    font-size: 1.2rem;
   }
 }
