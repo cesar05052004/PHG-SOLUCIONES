@@ -1,11 +1,35 @@
 
 
-
-
-
-
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
   background: #f7f7f7;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: clip; /* mejor que hidden para animaciones */
+  box-sizing: border-box;
+}
+
+/* Elimina cualquier desplazamiento o "scroll lateral" invisible */
+* {
+  box-sizing: border-box;
+  margin-right: 0;
+}
+
+/* Evita que slick-carousel (o cualquier carrusel) se desborde */
+.slick-track,
+.slick-list {
+  overflow: clip !important;
+}
+
+/* Previene espacio blanco causado por transformaciones en secciones */
+section, div {
+  max-width: 100vw;
+  overflow-x: clip;
 }
