@@ -86,7 +86,7 @@
 
   .clientes-titulo {
     font-size: 1.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
   }
 
   .clientes-carrusel {
@@ -95,32 +95,40 @@
   }
 
   .cliente-logo {
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
   }
 
   .cliente-logo img {
-    max-width: 70px;
+    max-width: 100%;
+    height: auto;
   }
 
   .clientes-btn {
-    padding: 0.6rem 1.6rem;
+    padding: 0.7rem 1.8rem;
     font-size: 1rem;
+    margin-top: 1rem;
   }
 }
 
 /* Extra pequeño (celulares muy pequeños) */
 @media (max-width: 480px) {
   .cliente-logo {
-    width: 60px;
-    height: 60px;
+    width: 160px;
+    height: 160px;
   }
 
   .cliente-logo img {
-    max-width: 60px;
+    max-width: 100%;
   }
 
   .clientes-titulo {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  .clientes-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.5rem;
   }
 }

@@ -18,36 +18,41 @@ const clientes = [
 ];
 
 const ClientesCarrusel = () => {
-  const settings = {
-    dots: false,
-    infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 1,
-    autoplay: true,
-    speed: 6000, // Duración de la animación (más alto = más lento)
-    autoplaySpeed: 0, // Sin pausa entre transiciones
-    cssEase: "linear", // Movimiento a velocidad constante
-    pauseOnHover: true, // Se detiene al pasar el ratón
-    arrows: false, // Oculta las flechas de navegación
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: { slidesToShow: 4 }
-      },
-      {
-        breakpoint: 992,
-        settings: { slidesToShow: 3 }
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 2 }
-      },
-      {
-        breakpoint: 480,
-        settings: { slidesToShow: 1 }
+const settings = {
+  dots: false,
+  infinite: true,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  autoplay: true,
+  speed: 4000,
+  autoplaySpeed: 0,
+  cssEase: "linear",
+  pauseOnHover: true,
+  arrows: false,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: { slidesToShow: 4 }
+    },
+    {
+      breakpoint: 992,
+      settings: { slidesToShow: 3 }
+    },
+    {
+      breakpoint: 768,
+      settings: { slidesToShow: 2 }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        speed: 3000,
+        autoplaySpeed: 0,
+        cssEase: "linear"
       }
-    ]
-  };
+    }
+  ]
+};
 
   return (
     <div className="clientes-section">
