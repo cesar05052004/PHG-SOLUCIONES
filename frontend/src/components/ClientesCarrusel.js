@@ -68,7 +68,7 @@ const settings = {
           ))}
         </Slider>
       </div>
-      <Link to="/#contacto" className="clientes-btn">
+      <Link to="/#contacto-form" className="clientes-btn">
         ¡SOLICITA UNA ASESORÍA AHORA!
       </Link>
     </div>

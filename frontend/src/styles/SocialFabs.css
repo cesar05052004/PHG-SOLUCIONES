@@ -21,46 +21,53 @@
 }
 
 .fab {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, filter 0.3s ease;
   animation: pulse 2.5s infinite ease-in-out;
   color: #fff;
 }
 
 .fab:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  transform: scale(1.15) translateY(-4px); /* Efecto de "pop" más notorio */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35); /* Sombra más pronunciada */
 }
 
 .fab svg {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   fill: #fff;
   stroke: #fff;
 }
 
 /* Colores específicos */
 .whatsapp-fab {
-  background-color: #ff6600; /* Naranja corporativo */
+  background-color: #25D366; /* Verde de WhatsApp */
   animation-delay: 0s;
 }
 .whatsapp-fab:hover {
-  background-color: #111;
+  background-color: #0c5048; /* Verde oscuro de WhatsApp */
 }
 
 .facebook-fab {
   background-color: #1877F2; /* Azul de Facebook */
   animation-delay: 0.2s;
 }
+.facebook-fab:hover {
+  background-color: #0b346a; /* Azul aún más oscuro */
+}
 
 .instagram-fab {
   /* Gradiente de Instagram */
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
   animation-delay: 0.4s;
+}
+
+.instagram-fab:hover {
+  filter: brightness(0.3); /* Hacemos el gradiente más oscuro */
 }
