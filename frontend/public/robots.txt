@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://phg-soluciones-39xo.vercel.app/sitemap.xml
