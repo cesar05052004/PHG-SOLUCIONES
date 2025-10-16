@@ -174,3 +174,96 @@
     font-size: 2.5rem; /* Reducimos el título del formulario en móviles */
   }
 }
+
+/* --- ESTILOS PARA MENÚ HAMBURGUESA Y PANEL LATERAL --- */
+
+/* Botón de Hamburguesa */
+.hamburger-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 20; /* Debe estar por encima de todo */
+}
+
+.hamburger-btn:focus {
+  outline: none;
+}
+
+.hamburger-line {
+  width: 2rem;
+  height: 0.25rem;
+  background: #fff;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+/* Menú Lateral */
+.side-menu {
+  /* Cambiamos a un menú flotante más pequeño */
+  position: absolute;
+  top: 4rem; /* Posición justo debajo del botón */
+  right: 1.5rem;
+  min-width: 220px;
+  background: rgba(26, 26, 26, 0.9); /* Fondo negro con 90% de opacidad */
+  backdrop-filter: blur(8px); /* Efecto de desenfoque para el fondo */
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  z-index: 15;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+    /* Animación de aparición */
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none; /* Evita interacción cuando está oculto */
+
+}
+
+
+.side-menu.open {
+  /* El menú se hace visible y se posiciona correctamente */
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.side-menu-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem; /* Tamaño de fuente ligeramente más pequeño */
+  font-weight: 600;
+  padding: 0.75rem 2rem; /* Ajustamos el padding */
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.side-menu-link:hover {
+  background-color: #ff6600; /* Naranja corporativo */
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .hamburger-btn {
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  .side-menu {
+    width: 220px;
+  }
+}

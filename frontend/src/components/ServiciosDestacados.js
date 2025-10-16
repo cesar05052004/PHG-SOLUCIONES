@@ -4,7 +4,7 @@ import '../styles/ServiciosDestacados.css';
 const servicios = [
   {
     icon: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760021216/outsourcing-contable_vb7r10.jpg',
-    title: 'Outsourcing Contable',
+    title: 'Servicios Contables',
     description:
       'Delegue su contabilidad en expertos y enfóquese en el crecimiento de su negocio con total tranquilidad.',
   },
@@ -15,16 +15,16 @@ const servicios = [
       'Optimizamos su carga fiscal y garantizamos el cumplimiento normativo para maximizar sus recursos.',
   },
   {
-    icon: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760021214/auditoria_wpzauq.webp',
-    title: 'Auditoría y Finanzas',
+    icon: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760621139/procesos-transito_dbqdxv.jpg',
+    title: 'Procedimientos de Transito',
     description:
-      'Aseguramos la transparencia y fiabilidad de su información financiera para la toma de decisiones estratégicas.',
+      'Ofrecemos asesoría jurídica especializada para apelar comparendos, sanciones por embriaguez y otras infracciones de tránsito, garantizando una defensa efectiva y personalizada.',
   },
   {
     icon: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760021215/consultoria_phgdke.jpg',
-    title: 'Consultoría Empresarial',
+    title: 'Asesoría Financiera',
     description:
-      'Impulsamos la eficiencia y el desarrollo de su empresa a través de soluciones personalizadas y efectivas.',
+      'Optimizamos la gestión económica de su negocio mediante estrategias financieras eficientes y sostenibles.',
   },
 ];
 

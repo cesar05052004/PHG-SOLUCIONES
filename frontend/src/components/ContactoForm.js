@@ -11,7 +11,7 @@ const ContactoForm = () => {
     setStatusMessage('Enviando...');
 
     // --- PEGA TUS CREDENCIALES DE EMAILJS AQUÍ ---
-    const serviceID = 'service_19n68oo';
+    const serviceID = 'service_aarrovh';
     const templateID = 'template_g8vss9a';
     const publicKey = 'L8chB4ksJAFBcA58b';
     // -------------------------------------------

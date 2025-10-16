@@ -12,7 +12,7 @@ const testimonios = [
   },
   {
     nombre: 'Laura Gómez',
-    texto: 'Gracias a PHG pude resolver problemas fiscales y mejorar la gestión contable de mi negocio.'
+    texto: 'Gracias a PHG pude mejorar la gestión contable de mi negocio.'
   }
 ];
 

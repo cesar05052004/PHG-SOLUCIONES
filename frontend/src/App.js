@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Inicio from './pages/Inicio';
 import SocialFabs from './components/SocialFabs';
+import Mision from './pages/Mision';
+import Vision from './pages/Vision';
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Inicio />} />
+          <Route path="/mision" element={<Mision />} />
+          <Route path="/vision" element={<Vision />} />
         </Routes>
       </main>
     </Router>
