@@ -1,3 +1,14 @@
+/* GLOBAL MINIMO - NO tocar overflow aquí */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
 
 body {

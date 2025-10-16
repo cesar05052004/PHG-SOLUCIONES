@@ -46,7 +46,7 @@ const settings = {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        speed: 3000,
+        speed: 480,
         autoplaySpeed: 0,
         cssEase: "linear"
       }
@@ -57,13 +57,17 @@ const settings = {
   return (
     <div className="clientes-section">
       <h2 className="clientes-title">Empresas que confían en nosotros</h2>
-      <Slider {...settings} className="clientes-carrusel">
-        {clientes.map((cliente, idx) => (
-          <div key={idx} className="cliente-logo">
-            <img src={cliente.img} alt={cliente.nombre} />
-          </div>
-        ))}
-      </Slider>
+
+
+      <div className="clientes-carousel-wrapper">
+        <Slider {...settings} className="clientes-carrusel">
+          {clientes.map((cliente, idx) => (
+            <div key={idx} className="cliente-logo">
+              <img src={cliente.img} alt={cliente.nombre} loading="lazy" />
+            </div>
+          ))}
+        </Slider>
+      </div>
       <Link to="/#contacto" className="clientes-btn">
         ¡SOLICITA UNA ASESORÍA AHORA!
       </Link>
