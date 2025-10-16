@@ -6,15 +6,17 @@
   text-align: center;
   padding: 2.5rem 1.5rem;
   background: transparent;
-  border-radius: 0;
-  box-shadow: none;
   font-family: 'Montserrat', Arial, sans-serif;
   max-width: 1100px;
   margin: 3rem auto;
+  overflow: hidden; /* evita desplazamiento lateral */
 }
 
-.clientes-titulo {
+/* Título */
+.clientes-title {
   margin-bottom: 2.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
 /* Ocultar flechas */
@@ -28,6 +30,18 @@
   width: 100%;
   max-width: 1100px;
   overflow: hidden;
+}
+
+/* Centrar cada logo dentro del slider */
+.slick-slide > div {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Centra el track y evita saltos */
+.slick-track {
+  margin: 0 auto !important;
 }
 
 /* Logos */
@@ -63,7 +77,6 @@
   font-size: 1.1rem;
   font-weight: 600;
   margin-top: 2rem;
-  margin-bottom: 2.5rem;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
@@ -84,25 +97,14 @@
     margin-top: 1rem;
   }
 
-  .clientes-titulo {
+  .clientes-title {
     font-size: 1.4rem;
     margin-bottom: 1.2rem;
-  }
-
-  .clientes-carrusel {
-    width: 100%;
-    max-width: 100%;
   }
 
   .cliente-logo {
     width: 120px;
     height: 120px;
-    margin: 0 auto;
-  }
-
-  .cliente-logo img {
-    max-width: 100%;
-    height: auto;
   }
 
   .clientes-btn {
@@ -112,18 +114,13 @@
   }
 }
 
-/* Extra pequeño (celulares muy pequeños) */
 @media (max-width: 480px) {
   .cliente-logo {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
   }
 
-  .cliente-logo img {
-    max-width: 100%;
-  }
-
-  .clientes-titulo {
+  .clientes-title {
     font-size: 1.3rem;
   }
 
@@ -131,51 +128,4 @@
     font-size: 0.9rem;
     padding: 0.6rem 1.5rem;
   }
-}
-/* Centrar el carrusel con respecto al contenido */
-.clientes-carrusel {
-  margin: 0 auto;              /* Centra horizontalmente */
-  width: 100%;
-  max-width: 1100px;           /* Coincide con tu .clientes-section */
-  display: flex !important;    /* Asegura alineación */
-  justify-content: center;     /* Centra internamente */
-  align-items: center;
-  overflow: hidden;            /* Evita desplazamiento lateral */
-  box-sizing: border-box;
-}
-
-/* Centrar correctamente cada logo dentro del slider */
-.slick-slide > div {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Asegura que no haya desplazamiento por padding del slider */
-.slick-track {
-  margin: 0 auto !important;
-}
-.clientes-section {
-  width: 100%;
-  max-width: 100vw; /* Evita que se extienda más allá del ancho de pantalla */
-  overflow: hidden; /* Oculta cualquier exceso */
-  margin: 0 auto; /* Centra correctamente */
-  padding: 2rem 1rem;
-  box-sizing: border-box;
-}
-
-/* --- Evita el desplazamiento horizontal sin romper el carrusel --- */
-.main-container, .clientes-section, .cta-section {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden;
-  box-sizing: border-box;
-}
-
-/* Ajuste adicional solo si el carrusel sigue desplazado */
-.slick-slider {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 100vw;
 }
