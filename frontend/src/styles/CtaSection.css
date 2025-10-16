@@ -67,3 +67,33 @@
     padding-top: 4rem;
   }
 }
+/* Centrado correcto y responsividad para móviles */
+@media (max-width: 768px) {
+  .cta-section {
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .cta-image {
+    width: 100%;          /* Ocupa el ancho disponible */
+    max-width: 320px;     /* Tamaño máximo para mantener proporción */
+    height: auto;
+    margin: 0 auto -3px auto; /* Centrada horizontalmente */
+    display: block;       /* Asegura centrado */
+  }
+
+  .cta-box {
+    padding: 2rem 1rem 1rem 1rem; /* Ajusta el padding */
+    border-radius: 20px;
+  }
+
+  .cta-title {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+}

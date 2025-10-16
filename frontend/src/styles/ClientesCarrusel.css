@@ -132,3 +132,26 @@
     padding: 0.6rem 1.5rem;
   }
 }
+/* Centrar el carrusel con respecto al contenido */
+.clientes-carrusel {
+  margin: 0 auto;              /* Centra horizontalmente */
+  width: 100%;
+  max-width: 1100px;           /* Coincide con tu .clientes-section */
+  display: flex !important;    /* Asegura alineación */
+  justify-content: center;     /* Centra internamente */
+  align-items: center;
+  overflow: hidden;            /* Evita desplazamiento lateral */
+  box-sizing: border-box;
+}
+
+/* Centrar correctamente cada logo dentro del slider */
+.slick-slide > div {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Asegura que no haya desplazamiento por padding del slider */
+.slick-track {
+  margin: 0 auto !important;
+}
