@@ -63,6 +63,7 @@ const Blog = () => {
   return (
     <div className="blog-container">
       <Link to="/" className="pagina-btn-volver blog-volver-arriba">← Volver al Inicio</Link>
+      <img src="https://res.cloudinary.com/diyd6flkf/image/upload/v1760021190/logo_spc3sb.png" alt="Logo PHG Soluciones" className="blog-logo" />
       <h1 className="blog-main-title">Nuestro Blog</h1>
       <p className="blog-intro">
         Descubre nuestras últimas novedades, proyectos y la esencia de nuestra empresa a través de nuestros videos.

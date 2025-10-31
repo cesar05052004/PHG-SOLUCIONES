@@ -20,6 +20,30 @@
 
 /* El resto de tus estilos para Blog.css */
 
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  50% {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 25px rgba(0,0,0,0.05);
+  }
+  100% {
+    transform: translateY(0px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+}
+
+.blog-logo {
+  display: block;
+  margin: 0 auto 2rem auto; /* Centra el logo y le da espacio debajo */
+  height: 120px; /* Altura del logo */
+  width: auto; /* Ancho automático para mantener la proporción */
+  border-radius: 20px; /* Puntas redondeadas */
+  animation: float 4s ease-in-out infinite; /* Nueva animación de flotación */
+}
+
 .blog-main-title {
   font-size: 2.8rem;
   font-weight: 800;
@@ -50,7 +74,7 @@
 
 .blog-post-card {
   background-color: #fff; /* Tarjetas blancas */
-  border-radius: 10px;
+  border-radius: 20px; /* Puntas más redondeadas */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
