@@ -44,6 +44,7 @@ const Hero = () => {
       <div ref={menuRef} className={`side-menu ${menuAbierto ? 'open' : ''}`}>
         <Link to="/mision" className="side-menu-link" onClick={toggleMenu}>Misión</Link>
         <Link to="/vision" className="side-menu-link" onClick={toggleMenu}>Visión</Link>
+        <Link to="/blog" className="side-menu-link" onClick={toggleMenu}>Blog</Link>
       </div>
 
       <div className="hero-overlay">

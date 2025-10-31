@@ -1,0 +1,149 @@
+/* ============================= */
+/* Estilos de la Página de Blog  */
+/* ============================= */
+
+.blog-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+}
+
+.blog-main-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #ff6600; /* Naranja corporativo */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.blog-intro {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 3rem auto;
+}
+
+.blog-posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.blog-post-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea el contenido al inicio */
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.blog-post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.blog-post-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Contenedor para el video responsivo con aspecto de celular (9:16) */
+.blog-video-container {
+  position: relative; 
+  width: 280px; /* Ancho fijo para simular un celular */
+  max-width: 100%; /* Asegura que no se desborde en pantallas pequeñas */
+  padding-top: 150%; /* Proporción 2:3. Reduce este valor para hacerlo aún más corto. */
+  height: 0;
+  overflow: hidden;
+  border-radius: 15px; /* Bordes redondeados como un celular */
+  box-shadow: 0 0 15px rgba(0,0,0,0.2); /* Sombra suave */
+  margin-top: 1.5rem; /* Espacio arriba del video */
+}
+
+/* Estilos para el iframe del video */
+.blog-post-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Hace que el video cubra todo el contenedor */
+}
+
+.blog-post-content {
+  padding: 1.5rem 1rem; /* Ajuste de padding */
+  width: 280px; /* Mismo ancho que el video para consistencia */
+  max-width: 100%;
+  text-align: left; /* Alineación del texto a la izquierda */
+  box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
+}
+
+.blog-post-date {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+
+.blog-post-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0; /* Ajuste de margen */
+  color: #222;
+}
+
+.blog-post-excerpt {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555; 
+  margin: 0; /* Reseteo de margen */
+}
+
+.blog-post-readmore {
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: 700;
+  align-self: flex-start;
+  display: none; /* Ocultamos el "Leer más" ya que no hay otra vista */
+}
+
+.blog-footer-nav {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Reutilizamos y adaptamos el estilo del botón de volver */
+.pagina-btn-volver {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pagina-btn-volver:hover {
+  background-color: #000; /* Cambiado a negro para el efecto hover */
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.blog-volver-arriba {
+  margin-bottom: 2rem; /* Espacio debajo del botón cuando está arriba */
+  align-self: flex-start; /* Alinea el botón a la izquierda dentro del contenedor */
+  margin-left: 0; /* Asegura que no haya margen izquierdo adicional */
+  margin-right: auto; /* Empuja el botón a la izquierda */
+  margin-top: 0; /* Resetea el margen superior */
+}

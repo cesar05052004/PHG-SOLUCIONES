@@ -191,11 +191,17 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 20; /* Debe estar por encima de todo */
+  z-index: 20; /* Por encima de todo */
 }
 
 .hamburger-btn:focus {
   outline: none;
+}
+
+/* Accesibilidad */
+.hamburger-btn:focus-visible {
+  outline: 2px solid #ff6600;
+  outline-offset: 4px;
 }
 
 .hamburger-line {
@@ -203,67 +209,84 @@
   height: 0.25rem;
   background: #fff;
   border-radius: 10px;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease;
   position: relative;
   transform-origin: 1px;
 }
 
+/* Animación del ícono */
+.hamburger-btn.open .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translateY(6px);
+}
+.hamburger-btn.open .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+.hamburger-btn.open .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translateY(-6px);
+}
+
 /* Menú Lateral */
 .side-menu {
-  /* Cambiamos a un menú flotante más pequeño */
   position: absolute;
-  top: 4rem; /* Posición justo debajo del botón */
+  top: 4rem; /* Justo debajo del botón */
   right: 1.5rem;
   min-width: 220px;
-  background: rgba(26, 26, 26, 0.9); /* Fondo negro con 90% de opacidad */
-  backdrop-filter: blur(8px); /* Efecto de desenfoque para el fondo */
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+
+  /* Fondo translúcido tipo "vidrio esmerilado" */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   z-index: 15;
   padding: 1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-    /* Animación de aparición */
+  /* Animación de aparición */
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  pointer-events: none; /* Evita interacción cuando está oculto */
-
+  transition: opacity 0.3s ease 0.05s, transform 0.3s ease;
+  pointer-events: none;
 }
 
-
 .side-menu.open {
-  /* El menú se hace visible y se posiciona correctamente */
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
 }
 
+/* Enlaces del Menú */
 .side-menu-link {
   color: #fff;
   text-decoration: none;
-  font-size: 1.2rem; /* Tamaño de fuente ligeramente más pequeño */
+  font-size: 1.2rem;
   font-weight: 600;
-  padding: 0.75rem 2rem; /* Ajustamos el padding */
+  padding: 0.75rem 2rem;
   width: 100%;
   text-align: center;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s, transform 0.2s ease;
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
 .side-menu-link:hover {
   background-color: #ff6600; /* Naranja corporativo */
   color: #fff;
+  transform: scale(1.05);
+  border-radius: 10px;
 }
 
+/* Responsivo */
 @media (max-width: 768px) {
   .hamburger-btn {
     top: 1.5rem;
     right: 1.5rem;
   }
+
   .side-menu {
     width: 220px;
   }
 }
+
