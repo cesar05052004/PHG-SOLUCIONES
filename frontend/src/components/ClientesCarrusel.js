@@ -15,6 +15,10 @@ const clientes = [
   { nombre: 'Infraestructura Hospitalaria', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760539947/Captura_de_pantalla_2025-10-15_095202_nona0y.png' },
   { nombre: 'Ser Optica', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760539179/ser-optica_sz4lpz.png' },
   { nombre: 'Inclusive Sport', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1760539767/inclusive-sport_j9punq.png' },
+  { nombre: 'Mini Mercado El Paisa', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1761921850/mini-mercado-el-paisa_hqf3xd.jpg' },
+  { nombre: 'AgroFinca', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1761923725/AGROFINCA_zgjmpn.jpg' },
+  { nombre: 'JAGUAZUL', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1761926714/JAGUAZUL_oxrvzc.jpg' },
+  { nombre: 'CODESI', img: 'https://res.cloudinary.com/diyd6flkf/image/upload/v1761926715/CODESI_qqutmj.jpg' },
 ];
 
 const ClientesCarrusel = () => {
